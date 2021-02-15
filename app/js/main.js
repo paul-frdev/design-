@@ -1,4 +1,9 @@
-$(function name(params) {
+$(function () {
   
-})
+$('.select__list').styler()
+
+});
+
+
+
 

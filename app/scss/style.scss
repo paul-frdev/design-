@@ -2,5 +2,89 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+@import 'libs';
+
+
+.header {
+  padding: 9px 0;
+  background-color: #323232;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.menu {
+  margin-right: -200px;
+
+  &__list {
+    display: flex;
+
+  }
+
+  &__list-item+.menu__list-item {
+    padding-left: 60px;
+  }
+
+  &__list-link {
+    @extend %Roboto-400;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 7px 7px;
+    border-bottom: 2px solid transparent;
+    transition: all .5s;
+
+    &:hover {
+      color: #ffa200;
+      border-color: #ffa200;
+    }
+  }
+}
+
+.select-box {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -27px;
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/icons/phone.png');
+    background-position: center center;
+    object-fit: cover;
+  }
+
+
+}
+
+.jq-selectbox {
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+.jq-selectbox__select {
+  height: auto;
+  padding: 0 45px 0 10px;
+  border: none;
+  background-color: #323232;
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import 'media';
