@@ -111,6 +111,7 @@
   color: #fff;
   font-size: 18px;
   text-align: center;
+
   &:hover {
     background-color: #323232;
     color: #fff;
@@ -118,6 +119,7 @@
     text-align: center;
   }
 }
+
 .jq-selectbox__trigger {
   border-left: none;
 }
@@ -126,6 +128,7 @@
   vertical-align: middle;
   width: 200px;
 }
+
 .jq-selectbox__select-text {
   width: 100%;
 }
@@ -140,7 +143,103 @@
   background-image: url('../images/icons/arrow.svg');
   background-repeat: no-repeat;
   background-position: center center;
+  object-fit: cover;
 }
+
+
+.top-banner {
+  max-width: 100%;
+  min-height: calc(100vh - 65px);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: contain;
+
+  &__inner {
+    padding-top: 60px;
+    max-width: 640px;
+  }
+
+  &__title {
+    @extend %Roboto-300;
+    color: #262626;
+    font-size: 60px;
+    padding-bottom: 40px;
+  }
+
+  &__title span {
+    @extend %Roboto-500;
+    color: #ffa200;
+    font-size: 60px;
+  }
+
+  &__text {
+    position: relative;
+    @extend %Roboto-300;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #343434;
+    padding-bottom: 40px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 210px;
+      height: 4px;
+      background-color: #ffa200;
+
+    }
+  }
+
+  &__text span {
+    color: #262626;
+    @extend %Roboto-500;
+    line-height: 1.5;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    margin-top: 40px;
+    background-color: #2b2d2c;
+    color: #dedfdf;
+    @extend %Roboto-300;
+    font-size: 24px;
+    padding: 10px 0;
+    padding-left: 25px;
+    border-radius: 0 50px 50px 27px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 12px;
+      right: 51px;
+      width: 43px;
+      height: 30px;
+      background-image: url('../images/icons/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  &__icon svg {
+    width: 20px;
+  }
+}
+
+
+
+
+
 
 
 
