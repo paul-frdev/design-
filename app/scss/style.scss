@@ -152,7 +152,7 @@
   min-height: calc(100vh - 65px);
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   object-fit: contain;
 
   &__inner {
@@ -236,8 +236,64 @@
   }
 }
 
+.prices {
+  padding: 100px 0;
+  background-color: #f9f9f9;
 
+  &__title {
+    position: relative;
+    @extend %Roboto-700;
+    font-size: 36px;
+    padding-bottom: 20px;
 
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 4px;
+      background-color: #ffa200;
+
+    }
+  }
+
+  &__items {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__item {
+    width: 220px;
+  }
+  &__item-img {
+    margin-bottom: 20px;
+  }
+  &__item-title {
+    position: relative;
+    @extend %Roboto-700;
+    font-size: 18px;
+    padding-bottom: 8px;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 55px;
+      height: 2px;
+      background-color: #ffa200;
+    }
+  }
+  &__item-text {
+    margin-top: 20px;
+    @extend %Roboto-400;
+    font-size: 18px;
+
+  }
+}
 
 
 
