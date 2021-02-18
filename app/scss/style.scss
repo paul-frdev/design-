@@ -8,17 +8,27 @@
 .header {
   padding: 5px 0;
   background-color: #323232;
+  min-height: 65px;
 
   &__inner {
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 57px;
+
+  }
+  .logo {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
   }
 }
 
 .menu {
-  margin-right: -200px;
-
+  margin-right: 80px;
+  padding-bottom: 5px;
   &__list {
     display: flex;
 
@@ -516,18 +526,20 @@
   &__filter-btn {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding: 90px 35px;
   }
 
   &__btn {
     position: relative;
     border: none;
+    border-bottom: 2px solid transparent;
     background-color: transparent;
     @extend %Roboto-400;
     font-size: 18px;
     outline: 0;
     cursor: pointer;
-
+    transition: border-color .3s;
     &:nth-last-child(+n+2)::after {
       position: absolute;
       content: '';
@@ -538,22 +550,23 @@
     }
     &:hover {
       color: #ffa200;
+      transition: color .3s;
     }
   }
 
   .mixitup-control-active {
-    padding: 0 7px 7px;
+    padding: 0 5px 5px;
     @extend %Roboto-700;
     color: #000;
-    cursor: pointer;
-    border-bottom: 2px solid #ffa200;
-   
+    border-color: 2px solid #ffa200;
+    transition: all .3s;
   }
 
 
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
     margin-bottom: 20px;
   }
 
@@ -571,6 +584,7 @@
   &__item-img {
     width: 100%;
     object-fit: cover;
+    box-shadow: 0px 0px 5px 0px rgba(0, 1, 5, 0.3);
   }
 
   &__item-title {
@@ -618,6 +632,17 @@
 
 
 
+.Прямоугольник__скругл__углы_745 {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px 0px rgba(0, 1, 5, 0.3);
+  position: absolute;
+  left: 750px;
+  top: 3684px;
+  width: 416px;
+  height: 535px;
+  z-index: 768;
+}
 
 
 
