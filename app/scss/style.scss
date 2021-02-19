@@ -1030,12 +1030,12 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    
+
   }
 
 
   &__item {
-    
+
     max-width: 310px;
     z-index: 1;
     overflow: hidden;
@@ -1058,21 +1058,6 @@
       background-size: cover;
       z-index: -1;
     }
-    // &::before,
-    // &::after {
-    //   position: relative;
-    //   content: "";
-    //   top: 0;
-    //   left: 0;
-    //   display: inline-block;
-    //   vertical-align: middle;
-    //   height: 2px;
-    //   width: 100%;
-    //   background-color: #dcdcdc;
-    // }
-    // &::before {
-    //   margin-left: -100px;
-    // }
   }
 
   &__item-second {
@@ -1096,6 +1081,7 @@
   &__item-third {
     position: relative;
     width: 100%;
+
     span::before {
       position: absolute;
       content: "";
@@ -1130,8 +1116,6 @@
     }
   }
 
-
-
   &__item-img {
     position: relative;
     margin: 0 auto;
@@ -1146,10 +1130,73 @@
   }
 }
 
+.services-add {
+  padding-top: 90px;
 
+  &__title {
+    position: relative;
+    @extend %Roboto-700;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 25px;
 
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 588px;
+      width: 80px;
+      height: 4px;
+      background-color: #ffa200;
+    }
+  }
 
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
 
+  &__item {
+    max-width: 513px;
+    width: 100%;
+    border: 1px solid  #ffa200;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border .3s;
+    &:hover {
+      border: 2px solid  #ffa200;  
+      border-radius: 10px;
+      box-shadow: 0px 1px 4px 0px rgba(0, 1, 5, 0.004);
+      background-color: rgb(49, 49, 51);
+      transition: background-color .3s ;
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  &__text {
+    padding: 30px 0 40px 0;
+    @extend %Roboto-400;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  &__img-bottom {
+    display: block;
+    margin: 0 auto;
+    width: 36px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
 
 
 
