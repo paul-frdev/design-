@@ -46,7 +46,7 @@
     color: #fff;
     padding: 0 7px 7px;
     border-bottom: 2px solid transparent;
-    transition: all .5s;
+    transition: border-color .5s;
 
     &:hover {
       color: #ffa200;
@@ -104,6 +104,8 @@
 }
 
 .jq-selectbox__dropdown {
+  top: 33px;
+  left: -32px;
   background-color: #323232;
   color: #fff;
   box-shadow: 0px 3px 4px 0px rgba(0, 1, 5, 0.92);
@@ -123,6 +125,7 @@
   color: #fff;
   font-size: 18px;
   text-align: center;
+  border: none;
 
   &:hover {
     background-color: #323232;
@@ -152,20 +155,25 @@
   width: 11px;
   height: 14px;
   border: none;
-  background-image: url('../images/icons/arrow.svg');
+  background-image: url('../images/icons/arrow.png');
   background-repeat: no-repeat;
   background-position: center center;
   object-fit: cover;
+  transition: transform 1s;
+
+  &:hover {
+    transform: rotate(180deg);
+  }
 }
 
 
 .top-banner {
   max-width: 100%;
   min-height: calc(100vh - 65px);
-  background-position: right;
+  background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: contain;
+  object-fit: cover;
 
   &__inner {
     padding-top: 60px;
@@ -404,7 +412,7 @@
     position: relative;
     display: block;
     max-width: 580px;
-    margin-top: 40px;
+    margin-top: 88px;
     background-color: #2b2d2c;
     color: #dedfdf;
     text-align: right;
@@ -571,6 +579,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     // grid-gap: 15px;
+    grid-row-gap: 15px;
     margin-bottom: 20px;
   }
 
@@ -583,6 +592,12 @@
       box-shadow: 0px 0px 5px 0px rgba(0, 1, 5, 0.3);
       border-radius: 10px;
     }
+  }
+
+  &__item-box {
+    min-height: 420px;
+    padding: 7px;
+
   }
 
   &__item-content {
@@ -619,7 +634,7 @@
   }
 
   &__item-text {
-    padding-bottom: 40px
+    padding-bottom: 20px
   }
 
   &__add {
@@ -1135,19 +1150,20 @@
 
   &__title {
     position: relative;
+    display: table;
     @extend %Roboto-700;
     font-size: 36px;
     text-align: center;
     padding-bottom: 25px;
+    margin: 0 auto;
 
     &::after {
       position: absolute;
       content: "";
       bottom: 0;
-      left: 588px;
+      left: 167px;
       width: 80px;
-      height: 4px;
-      background-color: #ffa200;
+      border-bottom: 4px solid #ffa200;
     }
   }
 
@@ -1162,16 +1178,20 @@
   &__item {
     max-width: 513px;
     width: 100%;
-    border: 1px solid  #ffa200;
+    border: 1px solid #ffa200;
     border-radius: 10px;
     cursor: pointer;
-    transition: border .3s;
+    transition: background-image .3s;
+
     &:hover {
-      border: 2px solid  #ffa200;  
+      border: 2px solid #ffa200;
       border-radius: 10px;
       box-shadow: 0px 1px 4px 0px rgba(0, 1, 5, 0.004);
+      background-image: url('../images/elipse-group.png');
+      background-repeat: no-repeat;
+      background-position: center center;
       background-color: rgb(49, 49, 51);
-      transition: background-color .3s ;
+      transition: background-color .3s;
     }
   }
 

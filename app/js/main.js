@@ -2,11 +2,13 @@ $(function () {
   
 $('.select__list').styler()
 
-$('.form__call-checkbox').styler()
+// $('..jq-selectbox select').()
 
 var mixer = mixitup('.portfolio__content');
 });
 
-
+foo.onclick = function(){
+  this.classList.toggle('rotate')
+}
 
 
