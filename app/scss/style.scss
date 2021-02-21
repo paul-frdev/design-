@@ -726,8 +726,9 @@
   }
 
   &__call-label {
+    position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     cursor: pointer;
   }
 
@@ -752,6 +753,7 @@
     position: absolute;
     width: 40px;
     height: 40px;
+    left: 0;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.004);
@@ -761,8 +763,7 @@
   &__call-checkbox--checked {
     @extend %Roboto-400;
     font-size: 16px;
-    max-width: 490px;
-    padding-left: 67px;
+    max-width: 513px;
     margin-bottom: 20px;
   }
 
@@ -1224,6 +1225,7 @@
   &__inner {
     position: relative;
     display: flex;
+    height: 401px;
     padding-top: 50px;
 
     .slick-prev.slick-arrow {
@@ -1333,6 +1335,7 @@
     min-height: 310px;
     padding: 9px;
   }
+
   &__img {
     max-width: 300px;
     display: block;
@@ -1363,11 +1366,147 @@
   }
 }
 
+.review-slider {
+  padding-top: 100px;
+  background-color: #f9f9f9;
 
+  &__title {
+    position: relative;
+    @extend %Roboto-700;
+    font-size: 36px;
+    padding-bottom: 25px;
 
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      border-bottom: 4px solid #ffa200;
+    }
+  }
 
+  &__inner {
+    display: flex;
+    padding-top: 100px;
+    max-width: 1200px;
+    min-height: 510px;
+    padding-bottom: 100px;
+  }
 
+  &__item {
+    max-width: 410px;
+    min-height: 490px;
+    padding-top: 25px;
+    background-color: #fff;
+  }
 
+  &__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 4px solid #ffb200;
+    border-radius: 50%;
+  }
+
+  &__item-title {
+    @extend %Roboto-400;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  &__subtitle {
+    @extend %Roboto-300;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__link {
+    @extend %Roboto-300;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    color: #ffa200;
+    padding-bottom: 25px;
+    transition: all .3s;
+
+    &:hover {
+      @extend %Roboto-400;
+    }
+  }
+
+  &__text {
+    @extend %Roboto-400;
+    font-size: 18px;
+    text-align: center;
+    padding: 24px;
+  }
+}
+
+.slick-prev.slick-arrow {
+  position: absolute;
+  bottom: 19px;
+  top: 50%;
+  left: -95px;
+  width: 13px;
+  height: 61px;
+  background-color: transparent;
+  background-image: url('../images/review/arrow-left.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.slick-next.slick-arrow {
+  position: absolute;
+  bottom: 19px;
+  top: 50%;
+  right: -100px;
+  width: 13px;
+  height: 61px;
+  background-color: transparent;
+  background-image: url('../images/review/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  outline: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.footer {
+  background-color: #242424;
+  box-shadow: 0px 2px 15px 0px rgba(0, 1, 5, 0.86);
+  
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+
+}
+.footer-bottom {
+  background-color: #fff;
+}
+
+.Прямоугольник_4212_копия {
+  background-image: -moz-linear-gradient( -93deg, rgb(38,38,38) 0%, rgb(25,25,25) 100%);
+  background-image: -webkit-linear-gradient( -93deg, rgb(38,38,38) 0%, rgb(25,25,25) 100%);
+  background-image: -ms-linear-gradient( -93deg, rgb(38,38,38) 0%, rgb(25,25,25) 100%);
+  box-shadow: 0px 2px 15px 0px rgba(0, 1, 5, 0.86);
+  position: absolute;
+  left: -12px;
+  top: 10527px;
+  width: 1948px;
+  height: 506px;
+  z-index: 679;
+}
 
 
 
