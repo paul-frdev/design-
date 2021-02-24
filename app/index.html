@@ -54,7 +54,7 @@
 
   <main class="main">
 
-    <section class="top-banner" style="background-image: url('images/top-banner.png')">
+    <section class="top-banner" style="background-image: url('images/top-banner.jpg')">
       <div class="container">
         <div class="top-banner__inner">
           <h1 class="top-banner__title">
@@ -69,20 +69,7 @@
           <a href="#" class="top-banner__btn">Заказать индивидуальный дизайн</a>
         </div>
         <a class="top-banner__icon" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="30" viewBox="0 0 36 20">
-            <defs>
-              <style>
-                .cls-1 {
-                  font-size: 18px;
-                  fill: #262626;
-                  font-family: Roboto;
-                  font-weight: 200;
-                }
-              </style>
-            </defs>
-            <text id="_" data-name="&gt;" class="cls-1"
-              transform="translate(-11.238 -1.632) rotate(90) scale(2.521 4.949)">&gt;</text>
-          </svg>
+          <img class="top-banner__img" src="images/icons/arrow-down.png" alt="arrow down">
         </a>
       </div>
     </section>
@@ -303,14 +290,9 @@
             <p class="practice__item-text">% моих клиентов, у которых вырос доход</p>
           </div>
         </div>
-        <a class="practice__img" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="18px">
-            <text kerning="auto" font-family="Myriad Pro" fill="rgb(255, 255, 255)"
-              transform="matrix( 0, 2.52079670897285, -4.94901590800304, 0,-5.70331169138058, -1.06881834909973)"
-              font-size="14px">
-              <tspan font-size="10px" font-family="Roboto" fill="#fff">&#62;</tspan>
-            </text>
-          </svg>
+        <a class="practice__link" href="#">
+          <img class="practice__img" src="images/icons/arrow-white.png" alt="arrow down">
+
         </a>
       </div>
     </section>
@@ -439,13 +421,13 @@
             <input class="form__call-input" type="text" placeholder="Введите тему обращения (Например: дизайн сайта)"
               required>
             <label class="form__call-label">
-              <input class="form__call-input--hidden" type="checkbox">
+              <input class="form__call-input--hidden" type="checkbox" required>
               <span class="form__call-checkbox"></span>
               <span class="form__call-checkbox--checked">Я ознакомлен(на) с Политикой конфиденциальности и даю согласие
                 на обработку моих персональных данных.</span>
             </label>
             <p class="form__call-text">Поля обязательные для заполнения</p>
-            <a class="form__call-btn" href="#">Заказать обратный звонок</a>
+            <button class="form__call-btn" type="submit">Заказать обратный звонок</button>
           </form>
         </div>
         <p class="form__text">Спасибо за заявку! Я свяжусь с Вами в ближайшее время.</p>
@@ -512,7 +494,7 @@
           </div>
           <div class="advantages__sideright">
             <h4 class="advantages__sideright-title">За что Вы платите заказывая у меня<span>?</span></h4>
-            <div class="advantages__sideright-item">
+            <div class="advantages__sideright-item advantages__sideright-item-size-s">
               <img class="advantages__sideright-img" src="images/curcle-two.png" alt="">
               <div class="advantages__sideright-result">
                 <p class="advantages__sideright-subtitle">
@@ -524,7 +506,7 @@
                     <path fill-rule="evenodd" fill="rgb(255, 163, 3)"
                       d="M0.091,0.841 L15.095,0.841 L15.095,15.854 L0.091,15.854 L0.091,0.841 Z" />
                   </svg><span class="advantages__sideright-span--orange">100%</span>Дизайн</p>
-                <p class="advantages__sideright-text--bottom">Поэтому со мной<span>Выгодно!</span></p>
+                <p class="advantages__sideright-text--span">Поэтому со мной<span>Выгодно!</span></p>
               </div>
             </div>
           </div>
@@ -698,80 +680,81 @@
       </div>
     </section>
     <section class="review-slider">
-      <!-- <div class="container"> -->
-      <h3 class="review-slider__title">Отзывы</h3>
-      <div class="review-slider__inner">
-        <div class="review-slider__item">
+      <div class="container review-slider__container">
+        <h3 class="review-slider__title">Отзывы</h3>
+        <div class="review-slider__inner">
+          <div class="review-slider__items">
+            <div class="review-slider__item">
+              <img class="review-slider__img" src="images/review/photo-one.png" alt="фото">
+              <h4 class="review-slider__item-title">Юрий Павлов</h4>
+              <p class="review-slider__subtitle">Директор компании “QA Expert”</p>
+              <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
+              <p class="review-slider__text">Прекрасный дизайнер! Сделал очень творческую работу. По срокам получилось
+                чуть быстрее, чем договаривались. Был на связи все время пока страница версталась по макетам. Без
+                проблем
+                делал мелкие правки уже после оплаты. Всем рекомендую!!!
+              </p>
+            </div>
 
-          <img class="review-slider__img" src="images/review/photo-one.png" alt="фото">
-          <h4 class="review-slider__item-title">Юрий Павлов</h4>
-          <p class="review-slider__subtitle">Директор компании “QA Expert”</p>
-          <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
-          <p class="review-slider__text">Прекрасный дизайнер! Сделал очень творческую работу. По срокам получилось
-            чуть быстрее, чем договаривались. Был на связи все время пока страница версталась по макетам. Без
-            проблем
-            делал мелкие правки уже после оплаты. Всем рекомендую!!!
-          </p>
-        </div>
-
-        <div class="review-slider__item">
-          <img class="review-slider__img" src="images/review/photo-two.png" alt="фото">
-          <h4 class="review-slider__item-title"> Анна Бобанич</h4>
-          <p class="review-slider__subtitle">Сотрудник WEB-студии</p>
-          <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
-          <p class="review-slider__text">з Володимиром швидко і комфортно працювати. Вміє почути і реалізувати.
-            Продовжуємо співпрацю
-          </p>
-        </div>
-        <div class="review-slider__item">
-          <img class="review-slider__img" src="images/review/photo-three.png" alt="фото">
-          <h4 class="review-slider__item-title">Карина Верченко</h4>
-          <p class="review-slider__subtitle">Сотрудник WEB-студии</p>
-          <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
-          <p class="review-slider__text">пожалуй лучший исполнитель в данной сфере с огромным потенциалом!
-            Профессионализм, соблюдение сроков, общее понимание задачи и быстрая отзывчивость при внесении правок.
-            Очень довольны работой - дизайн сделан на 10+!!!
-          </p>
-        </div>
-        <div class="review-slider__item">
-          <img class="review-slider__img" src="images/review/photo-one.png" alt="фото">
-          <h4 class="review-slider__item-title">Юрий Павлов</h4>
-          <p class="review-slider__subtitle">Директор компании “QA Expert”</p>
-          <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
-          <p class="review-slider__text">Прекрасный дизайнер! Сделал очень творческую работу. По срокам получилось
-            чуть быстрее, чем договаривались. Был на связи все время пока страница версталась по макетам. Без
-            проблем
-            делал мелкие правки уже после оплаты. Всем рекомендую!!!
-          </p>
-        </div>
-        <div class="review-slider__item">
-          <img class="review-slider__img" src="images/review/photo-two.png" alt="фото">
-          <h4 class="review-slider__item-title"> Анна Бобанич</h4>
-          <p class="review-slider__subtitle">Сотрудник WEB-студии</p>
-          <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
-          <p class="review-slider__text">з Володимиром швидко і комфортно працювати. Вміє почути і реалізувати.
-            Продовжуємо співпрацю
-          </p>
-        </div>
-        <div class="review-slider__item">
-          <img class="review-slider__img" src="images/review/photo-three.png" alt="фото">
-          <h4 class="review-slider__item-title">Карина Верченко</h4>
-          <p class="review-slider__subtitle">Сотрудник WEB-студии</p>
-          <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
-          <p class="review-slider__text">пожалуй лучший исполнитель в данной сфере с огромным потенциалом!
-            Профессионализм, соблюдение сроков, общее понимание задачи и быстрая отзывчивость при внесении правок.
-            Очень довольны работой - дизайн сделан на 10+!!!
-          </p>
+            <div class="review-slider__item">
+              <img class="review-slider__img" src="images/review/photo-two.png" alt="фото">
+              <h4 class="review-slider__item-title"> Анна Бобанич</h4>
+              <p class="review-slider__subtitle">Сотрудник WEB-студии</p>
+              <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
+              <p class="review-slider__text">з Володимиром швидко і комфортно працювати. Вміє почути і реалізувати.
+                Продовжуємо співпрацю
+              </p>
+            </div>
+            <div class="review-slider__item">
+              <img class="review-slider__img" src="images/review/photo-three.png" alt="фото">
+              <h4 class="review-slider__item-title">Карина Верченко</h4>
+              <p class="review-slider__subtitle">Сотрудник WEB-студии</p>
+              <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
+              <p class="review-slider__text">пожалуй лучший исполнитель в данной сфере с огромным потенциалом!
+                Профессионализм, соблюдение сроков, общее понимание задачи и быстрая отзывчивость при внесении правок.
+                Очень довольны работой - дизайн сделан на 10+!!!
+              </p>
+            </div>
+            <div class="review-slider__item">
+              <img class="review-slider__img" src="images/review/photo-one.png" alt="фото">
+              <h4 class="review-slider__item-title">Юрий Павлов</h4>
+              <p class="review-slider__subtitle">Директор компании “QA Expert”</p>
+              <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
+              <p class="review-slider__text">Прекрасный дизайнер! Сделал очень творческую работу. По срокам получилось
+                чуть быстрее, чем договаривались. Был на связи все время пока страница версталась по макетам. Без
+                проблем
+                делал мелкие правки уже после оплаты. Всем рекомендую!!!
+              </p>
+            </div>
+            <div class="review-slider__item">
+              <img class="review-slider__img" src="images/review/photo-two.png" alt="фото">
+              <h4 class="review-slider__item-title"> Анна Бобанич</h4>
+              <p class="review-slider__subtitle">Сотрудник WEB-студии</p>
+              <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
+              <p class="review-slider__text">з Володимиром швидко і комфортно працювати. Вміє почути і реалізувати.
+                Продовжуємо співпрацю
+              </p>
+            </div>
+            <div class="review-slider__item">
+              <img class="review-slider__img" src="images/review/photo-three.png" alt="фото">
+              <h4 class="review-slider__item-title">Карина Верченко</h4>
+              <p class="review-slider__subtitle">Сотрудник WEB-студии</p>
+              <a class="review-slider__link" href="#">Отзыв оставлен на FreelanceHunt</a>
+              <p class="review-slider__text">пожалуй лучший исполнитель в данной сфере с огромным потенциалом!
+                Профессионализм, соблюдение сроков, общее понимание задачи и быстрая отзывчивость при внесении правок.
+                Очень довольны работой - дизайн сделан на 10+!!!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- </div> -->
     </section>
 
-    <section class="form">
+    <section class="form form-botoom">
       <div class="container">
         <div class="form__inner">
           <div class="form__content">
-            <h3 class="form__content-title">Остались вопросы<span>?</span>
+            <h3 class="form__content-title">Остались вопросы<span>?</span><br>
               Оставьте заявку, и я Вам перезвоню<span>!</span></h3>
             <p class="form__content-text">Покажите Вашим клиентам, что такое безупречный вид продукта.</p>
             <div>
@@ -784,13 +767,13 @@
             <input class="form__call-input" type="text" placeholder="Введите тему обращения (Например: дизайн сайта)"
               required>
             <label class="form__call-label">
-              <input class="form__call-input--hidden" type="checkbox">
+              <input class="form__call-input--hidden" type="checkbox" required>
               <span class="form__call-checkbox"></span>
               <span class="form__call-checkbox--checked">Я ознакомлен(на) с Политикой конфиденциальности и даю согласие
                 на обработку моих персональных данных.</span>
             </label>
             <p class="form__call-text">Поля обязательные для заполнения</p>
-            <a class="form__call-btn" href="#">Заказать обратный звонок</a>
+            <button class="form__call-btn" type="submit">Заказать обратный звонок</button>
           </form>
         </div>
         <p class="form__text">Спасибо за заявку! Я свяжусь с Вами в ближайшее время.</p>
@@ -800,7 +783,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-container">
       <div class="footer-top">
         <div class="footer-top__item">
           <h6 class="footer-top__title">контакты</h6>
@@ -897,6 +880,9 @@
           </div>
         </div>
       </div>
+      <a class="footer-up__link" href="#">
+        <img class="footer-up__img" src="images/icons/arrow-up.svg" alt="arrow up">
+      </a>
     </div>
     <div class="footer-bottom">
       <p class="footer-bottom__copy">© Vladimir Suprun 2018. All rights reserved</p>

@@ -168,13 +168,14 @@
 
 .top-banner {
   max-width: 100%;
-  min-height: calc(100vh - 200px);
-  background: linear-gradientrgb(197, 197, 200) 0%, rgb(254, 254, 254);
+  // min-height: calc(100vh - 65px);
+  min-height: 100vh;
+  background-image: url('../images/top-slider-bg.png');
   box-shadow: 0px 0px 21px 0px rgba(0, 1, 5, 0.19);
-  background-position: right;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: 47%;
-  object-fit: cover;
+  background-size: cover;
+  // object-fit: cover;
   padding-bottom: 50px;
 
   &__inner {
@@ -198,6 +199,7 @@
 
   &__text {
     position: relative;
+    max-width: 600px;
     @extend %Roboto-300;
     font-size: 24px;
     line-height: 1.5;
@@ -250,10 +252,9 @@
   }
 
   &__icon {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 227px;
+    display: flex;
+    justify-content: center;
+    margin-top: 193px;
   }
 
   &__icon svg {
@@ -262,7 +263,8 @@
 }
 
 .services {
-  padding: 80px 0;
+  padding-top: 116px;
+  padding-bottom: 130px;
   background-color: #f9f9f9;
 
   &__title {
@@ -337,7 +339,7 @@
 .about {
   max-width: 100%;
   min-height: 100vh;
-  padding: 135px 0 65px;
+  padding: 85px 0 65px;
 
   &__title {
     position: relative;
@@ -358,7 +360,7 @@
 
   &__inner {
     display: flex;
-    padding-top: 109px;
+    padding-top: 112px;
   }
 
   &__paragraph {
@@ -451,7 +453,7 @@
 }
 
 .practice {
-  background-color: #262626;
+  background-image: -webkit-linear-gradient(40deg, rgb(38, 38, 38) 0%, rgb(54, 54, 57) 100%);
   box-shadow: 0px 2px 15px 0px rgba(0, 1, 5, 0.86);
   color: #fff;
   padding-top: 100px;
@@ -524,15 +526,18 @@
     font-size: 24px;
     text-align: center;
   }
-  &__img {
+
+  &__link {
     display: flex;
     justify-content: center;
-    padding-top: 124px;
+    padding-top: 80px;
+    padding-bottom: 25px;
   }
+
 }
 
 .portfolio {
-  padding: 100px 0 80px;
+  padding: 114px 0 80px;
 
   &__title {
     position: relative;
@@ -722,6 +727,7 @@
 
 
 .form {
+  background-image: linear-gradient(40deg, rgb(38, 38, 38) 0%, rgb(54, 54, 57) 100%);
   padding: 94px 0 80px;
   background-color: #343436;
   box-shadow: 0px 2px 15px 0px rgba(0, 1, 5, 0.86);
@@ -859,8 +865,9 @@
     color: #000000;
     @extend %Roboto-400;
     font-size: 22px;
-    padding: 15px 70px 15px 132px;
+    padding: 15px 119px 15px 132px;
     border-radius: 50px 0 22px 50px;
+    cursor: pointer;
 
     &::before {
       position: absolute;
@@ -950,7 +957,7 @@
     @extend %Roboto-700;
     font-size: 24px;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 64px;
   }
 
   &__sideleft-title span,
@@ -960,7 +967,7 @@
 
   &__sideleft-img,
   &__sideright-img {
-    max-width: 265px;
+    max-width: 248px;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -971,6 +978,10 @@
     display: flex;
     max-width: 650px;
     min-height: 240px;
+  }
+
+  &__sideright-item-size-s {
+    padding-right: 72px;
   }
 
   &__sideleft-result,
@@ -991,7 +1002,7 @@
   &__sideleft-text {
     @extend %Roboto-400;
     font-size: 18px;
-    padding-bottom: 15px;
+    padding-bottom: 11px;
   }
 
   &__sideleft-text span,
@@ -1024,7 +1035,7 @@
   &__sideright-subtitle {
     @extend %Roboto-700;
     font-size: 18px;
-    padding-bottom: 106px;
+    padding-bottom: 62px;
   }
 
   &__sideright-text {
@@ -1032,13 +1043,13 @@
     font-size: 18px;
   }
 
-  &__sideright-text--bottom {
+  &__sideright-text--span {
     @extend %Roboto-400;
-    font-size: 18px;
+    font-size: 24px;
     padding-top: 60px;
   }
 
-  &__sideright-text--bottom span {
+  &__sideright-text--span span {
     display: block;
     @extend %Roboto-300;
     font-size: 30px;
@@ -1048,12 +1059,13 @@
 }
 
 .recieve {
-  padding: 90px 0 90px;
+  padding: 96px 0 90px;
 
   &__title {
     @extend %Roboto-700;
     font-size: 24px;
     padding-bottom: 90px;
+    padding-left: 40px;
   }
 
   &__title span {
@@ -1062,7 +1074,7 @@
 
   &__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
 
@@ -1083,10 +1095,11 @@
 }
 
 .process {
+  background-image: linear-gradient(40deg, rgb(38, 38, 38) 0%, rgb(54, 54, 57) 100%);
   background-color: #2d2d2e;
   color: #fff;
   box-shadow: 0px 2px 15px 0px rgba(0, 1, 5, 0.86);
-  padding: 90px 0 100px;
+  padding: 90px 0 38px;
 
   &__title {
     position: relative;
@@ -1107,9 +1120,9 @@
 
   &__items {
     position: relative;
-    margin-top: 100px;
+    margin-top: 127px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
 
   }
@@ -1119,7 +1132,6 @@
 
     max-width: 310px;
     z-index: 1;
-    overflow: hidden;
   }
 
   &__item-first {
@@ -1212,7 +1224,7 @@
 }
 
 .services-add {
-  padding-top: 90px;
+  padding-top: 96px;
 
   &__title {
     position: relative;
@@ -1237,8 +1249,8 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 56px;
+    padding-bottom: 64px;
   }
 
   &__item {
@@ -1290,8 +1302,9 @@
   &__inner {
     position: relative;
     display: flex;
-    height: 401px;
-    padding-top: 50px;
+    height: 420px;
+    padding-top: 76px;
+    padding-right: 16px;
 
     .slick-prev.slick-arrow {
       position: absolute;
@@ -1360,7 +1373,7 @@
   }
 
   &__text {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     padding-right: 20px;
     @extend %Roboto-300;
     font-size: 18px;
@@ -1372,7 +1385,8 @@
     text-align: center;
     max-width: 210px;
     margin: 0 auto;
-    padding: 10px 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     @extend %Roboto-700;
     font-size: 18px;
     background-color: #313133;
@@ -1471,9 +1485,40 @@
 .review-slider {
   position: relative;
   max-width: 100%;
-  padding: 0 calc(50% - 530px);
-  padding-top: 100px;
+  padding-top: 36px;
   background-color: #f9f9f9;
+
+  .slick-prev {
+    display: none;
+    top: 45%;
+    transform: translateY(-50%);
+    left: -60px;
+    z-index: 5;
+    width: 114px;
+    height: 61px;
+    padding-right: 50px;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .slick-next {
+    display: none;
+    bottom: 19px;
+    top: 45%;
+    transform: translateY(-50%);
+    right: -60px;
+    z-index: 5;
+    width: 114px;
+    height: 61px;
+    padding-left: 50px;
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+  }
 
   &__title {
     position: relative;
@@ -1492,16 +1537,24 @@
   }
 
   &__inner {
-    display: flex;
-    padding-top: 100px;
-    max-width: 1330px;
-    height: 906px;
-    padding-bottom: 200px;
+    padding-top: 83px;
   }
 
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1330px;
+    width: 100%;
+    height: 871px;
+    margin: 0 auto;
+  }
+
+
+
   &__item {
-    max-width: 410px;
-    height: 566px;
+    max-width: 420px;
+    height: 500px;
     padding-top: 25px;
     background-color: #fff;
     box-shadow: 0px 0px 24px 0px rgba(0, 1, 5, 0.1);
@@ -1555,9 +1608,8 @@
 .review-slider .slick-dots {
   position: absolute;
   display: flex;
-  bottom: 0;
+  bottom: 76px;
   right: 47%;
-  margin-bottom: 100px;
 }
 
 .slick-dots li+li {
@@ -1586,40 +1638,21 @@
   margin: 6px;
 }
 
-.slick-prev.slick-arrow {
-  position: absolute;
-  bottom: 19px;
-  top: 40%;
-  left: -95px;
-  width: 13px;
-  height: 61px;
-  background-color: transparent;
-  background-image: url('../images/review/arrow-left.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  border: none;
-  outline: 0;
-  cursor: pointer;
+
+.form-botoom {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .form__inner {
+    padding-bottom: 9px;
+  }
+
 }
 
-.slick-next.slick-arrow {
-  position: absolute;
-  bottom: 19px;
-  top: 40%;
-  right: -100px;
-  width: 13px;
-  height: 61px;
-  background-color: transparent;
-  background-image: url('../images/review/arrow-right.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  outline: transparent;
-  border: none;
-  outline: 0;
-  cursor: pointer;
-}
 
 .footer {
+  background-image: linear-gradient(93deg, rgb(38, 38, 38) 0%, rgb(25, 25, 25) 100%);
+  position: relative;
   background-color: #242424;
   box-shadow: 0px 2px 15px 0px rgba(0, 1, 5, 0.86);
   margin-top: 35px;
@@ -1629,7 +1662,7 @@
   display: flex;
   justify-content: space-between;
   color: #fff;
-  padding: 100px 10px 70px 0;
+  padding: 130px 10px 139px 0;
 
   &__title {
     @extend %Roboto-400;
@@ -1689,10 +1722,11 @@
   &__list {
     width: 290px;
     height: 130px;
-    margin-bottom: 70px;
+    margin-bottom: 70px !important;
   }
 
   &__social {
+    position: relative;
     width: 302px;
     height: 144px;
   }
@@ -1719,6 +1753,23 @@
   }
 }
 
+.footer-up__link {
+  position: absolute;
+  bottom: 80px;
+  right: 6px;
+}
+
+.footer-up__img {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 5px;
+}
+
 .footer-bottom {
   background-color: #fff;
   min-height: 50px;
@@ -1732,44 +1783,6 @@
     text-transform: uppercase;
   }
 }
-
-
-
-.Фигура_940_копия_2 {
-  background-color: rgb(49, 49, 51);
-  box-shadow: 0px 0px 4px 0px rgba(0, 1, 5, 0.57);
-  position: absolute;
-  left: 1706px;
-  top: 9324px;
-  width: 13px;
-  height: 61px;
-  z-index: 677;
-}
-
-
-
-
-
-
-
-
-
-
-
-.Прямоугольник_4212_копия {
-  background-image: -moz-linear-gradient(-93deg, rgb(38, 38, 38) 0%, rgb(25, 25, 25) 100%);
-  background-image: -webkit-linear-gradient(-93deg, rgb(38, 38, 38) 0%, rgb(25, 25, 25) 100%);
-  background-image: -ms-linear-gradient(-93deg, rgb(38, 38, 38) 0%, rgb(25, 25, 25) 100%);
-  box-shadow: 0px 2px 15px 0px rgba(0, 1, 5, 0.86);
-  position: absolute;
-  left: -12px;
-  top: 10527px;
-  width: 1948px;
-  height: 506px;
-  z-index: 679;
-}
-
-
 
 
 
