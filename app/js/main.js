@@ -1,5 +1,9 @@
 $(function () {
 
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
   $('.news-slider__items').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -10,7 +14,7 @@ $(function () {
       breakpoint: 1260,
       settings: {
         slidesToShow: 2,
-    slidesToScroll: 1,
+        slidesToScroll: 1,
       }
     }, ]
   });
@@ -23,13 +27,15 @@ $(function () {
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 2,
+    // centerMode: true,
+    arrows: false,
     prevArrow: '<button type="button" class="slick-prev"><img src="images/review/arrow-left.svg" alt="arrow-left"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/review/arrow-right.svg" alt="arrow-right"></button>',
     responsive: [{
       breakpoint: 1350,
       settings: {
-        centerMode: true,
-        variableWidth: false,
+        // centerMode: true,
+        variableWidth: true,
         slidesToShow: 2,
         slidesToScroll: 2,
         arrows: false,
