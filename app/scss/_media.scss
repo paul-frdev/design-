@@ -46,6 +46,38 @@
       font-size: 18px;
     }
   }
+
+  .advantages {
+    &__inner {
+      display: block;
+    }
+
+    &__sideleft {
+      margin-bottom: 40px;
+    }
+
+    &__sideleft-title,
+    &__sideright-title {
+      padding-bottom: 20px;
+    }
+
+    &__sideleft-item,
+    &__sideright-item {
+      max-width: 670px;
+      padding-right: 0;
+    }
+
+    &__sideleft-result,
+    &__sideright-result {
+      margin-left: 100px;
+    }
+  }
+  .process {
+    &__items {
+      flex-wrap: wrap;
+      margin: 60px 0;
+    }
+  }
 }
 
 @media (max-width: 1050px) {
@@ -216,6 +248,33 @@
       margin-bottom: 25px;
     }
   }
+
+  .advantages {
+    padding: 40px 0 40px;
+
+    &__box {
+      margin-top: 30px;
+    }
+
+    &__inner {
+      display: block;
+    }
+  }
+
+  .recieve {
+    padding: 40px 0 40px;
+
+    &__items {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 301px;
+      margin-bottom: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
 }
 
 @media (max-width: 860px) {
@@ -334,8 +393,45 @@
     &__inner {
       padding-bottom: 30px;
     }
+
     &__call-btn {
       padding: 15px 35px 15px 77px;
+    }
+  }
+
+  .advantages {
+    &__box {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__sideleft-item,
+    &__sideright-item {
+      flex-wrap: wrap;
+      justify-content: end;
+      padding: 0;
+    }
+
+    &__sideleft-img,
+    &__sideright-img {
+      margin-bottom: 40px;
+    }
+
+    &__sideleft-result,
+    &__sideright-result {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  .recieve {
+    &__title {
+      font-size: 22px;
+      padding-bottom: 40px;
+      padding-left: 0;
     }
   }
 }
@@ -431,6 +527,11 @@
       font-size: 12px;
     }
 
+    &__call-checkbox {
+      width: 25px;
+      height: 25px;
+    }
+
     &__call-btn {
       font-size: 12px;
 
@@ -438,6 +539,27 @@
         top: 9px;
       }
 
+    }
+  }
+
+  .advantages {
+    .container {
+      padding: 0 10px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__item {
+
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__sideleft-text span,
+    &__sideright-text span {
+      padding: 0 20px 0 15px;
     }
   }
 }

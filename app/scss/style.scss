@@ -618,7 +618,7 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(426px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
     grid-gap: 15px;
     margin-bottom: 40px;
   }
@@ -996,11 +996,11 @@
 
   &__sideleft-img,
   &__sideright-img {
-    max-width: 275px;
+    max-width: 252px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   &__sideleft-item,
@@ -1016,7 +1016,7 @@
 
   &__sideleft-result,
   &__sideright-result {
-    margin-left: 45px;
+    margin-left: 25px;
   }
 
   &__sideleft-subtitle {
