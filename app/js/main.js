@@ -11,12 +11,20 @@ $(function () {
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
     responsive: [{
-      breakpoint: 1260,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      }
-    }, ]
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ]
   });
 
   $('.select__list').styler();
@@ -27,18 +35,15 @@ $(function () {
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 2,
-    // centerMode: true,
-    arrows: false,
+    arrows: true,
     prevArrow: '<button type="button" class="slick-prev"><img src="images/review/arrow-left.svg" alt="arrow-left"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/review/arrow-right.svg" alt="arrow-right"></button>',
     responsive: [{
       breakpoint: 1350,
       settings: {
-        // centerMode: true,
-        variableWidth: true,
         slidesToShow: 2,
         slidesToScroll: 2,
-        arrows: false,
+        arrows: true,
       }
     }, ]
   });

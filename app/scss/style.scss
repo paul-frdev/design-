@@ -618,7 +618,7 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     grid-gap: 15px;
     margin-bottom: 40px;
   }
@@ -1160,13 +1160,13 @@
 
   &__item {
 
-    max-width: 310px;
+    max-width: 293px;
     z-index: 1;
   }
 
   &__item-first {
     position: relative;
-    max-width: 250px;
+    max-width: 233px;
 
     span::before {
       position: absolute;
@@ -1285,7 +1285,7 @@
   }
 
   &__item {
-    max-width: 513px;
+    max-width: 502px;
     width: 100%;
     border: 1px solid #ffa200;
     border-radius: 10px;
@@ -1330,10 +1330,14 @@
 .news-slider {
   padding: 100px 0 125px 0;
 
+  &__title {
+    padding-bottom: 15px;
+  }
+
   &__inner {
     position: relative;
     display: flex;
-    height: 420px;
+    min-height: 420px;
     padding-top: 76px;
     padding-right: 16px;
 
@@ -1514,45 +1518,51 @@
 }
 
 .review-slider {
-
   max-width: 100%;
   padding-top: 36px;
   background-color: #f9f9f9;
 
-  .slick-prev {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 20px;
-    height: 72px;
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    cursor: pointer;
-    z-index: 999;
-    // box-shadow: 0px 0px 4px 0px rgba(0, 1, 5, 0.57);
-  }
+  &__inner {
+    position: relative;
+    padding-top: 83px;
 
-  .slick-next {
-    position: absolute;
-    bottom: 19px;
-    top: 50%;
-    right: 0;
-    width: 20px;
-    height: 72px;
-    background-color: transparent;
-    outline: transparent;
-    border: none;
-    outline: 0;
-    cursor: pointer;
-    z-index: 999;
-    // box-shadow: 0px 0px 4px 0px rgba(0, 1, 5, 0.57);
+
+    .slick-prev {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 20px;
+      height: 72px;
+      border: none;
+      outline: 0;
+      background-color: transparent;
+      cursor: pointer;
+      z-index: 999;
+      // box-shadow: 0px 0px 4px 0px rgba(0, 1, 5, 0.57);
+    }
+
+    .slick-next {
+      position: absolute;
+      bottom: 19px;
+      top: 50%;
+      right: 0;
+      width: 20px;
+      height: 72px;
+      background-color: transparent;
+      outline: transparent;
+      border: none;
+      outline: 0;
+      cursor: pointer;
+      z-index: 999;
+      // box-shadow: 0px 0px 4px 0px rgba(0, 1, 5, 0.57);
+    }
   }
 
   .slick-arrow {
     border: none;
     background-color: transparent;
   }
+
 
   &__title {
     position: relative;
@@ -1570,10 +1580,6 @@
     }
   }
 
-  &__inner {
-    padding-top: 83px;
-  }
-
   &__items {
     display: flex;
     justify-content: center;
@@ -1583,15 +1589,11 @@
     margin: 0 auto;
   }
 
-  // &__wrapper {
-  //   margin: 0 30px;
-  // }
-
   &__item {
     max-width: 420px;
     height: 520px;
     padding-top: 25px;
-    // margin: 20px 20px;
+    margin: 10px;
     background-color: #fff;
     box-shadow: 0px 0px 24px 0px rgba(0, 1, 5, 0.1);
   }
@@ -1685,6 +1687,7 @@
   .form__inner {
     padding-bottom: 9px;
   }
+  
 
 }
 

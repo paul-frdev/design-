@@ -1,3 +1,37 @@
+@media (max-width: 1260px) {
+  .news-slider {
+    padding: 40px 0 0 0;
+
+    &__inner {
+      display: block;
+      padding-top: 30px;
+
+      .slick-prev.slick-arrow {
+        top: -67px;
+        left: 248px;
+      }
+
+      .slick-next.slick-arrow {
+        top: -67px;
+        left: 323px;
+      }
+    }
+
+    &__content {
+      max-width: 550px;
+      min-height: 160px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__btn {
+      margin-left: 0;
+    }
+  }
+}
+
 @media (max-width: 1220px) {
 
   .about {
@@ -72,11 +106,16 @@
       margin-left: 100px;
     }
   }
+
   .process {
     &__items {
       flex-wrap: wrap;
       margin: 60px 0;
     }
+  }
+
+  .news-slider {
+  
   }
 }
 
@@ -275,6 +314,61 @@
       margin-right: 50px;
     }
   }
+
+  .process {
+    padding: 50px 0 38px;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__item {
+      margin-right: 59px;
+      margin-left: 35px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .services-add {
+    padding-top: 10px;
+
+    &__items {
+      display: block;
+      padding-bottom: 20px;
+    }
+
+    &__item {
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+
+  .news-slider {
+    .container {
+      padding: 0;
+      padding-bottom: 15px;
+    }
+
+    &__title {
+      padding-left: 10px;
+      font-size: 32px;
+      &::after {
+        left: 12px;
+      }
+    }
+
+    &__content {
+      padding: 0 10px;
+    }
+
+    &__items {
+      max-width: 650px;
+    }
+    // &__item {
+    //   width: 100%;
+    //   max-width: 323px
+    // }
+  }
 }
 
 @media (max-width: 860px) {
@@ -434,6 +528,35 @@
       padding-left: 0;
     }
   }
+
+  .news-slider {
+    &__inner {
+      .slick-prev.slick-arrow {
+        top: 23px;
+        left: 97px;
+      }
+
+      .slick-next.slick-arrow {
+        top: 23px;
+        left: 180px;
+      }
+    }
+
+    &__content {
+      max-width: 100%;
+      min-height: 119px;
+    }
+
+    &__btn {
+      margin: 0 auto;
+    }
+
+    &__items {
+      max-width: 324px;
+      margin: 0 auto;
+      padding-top: 90px;
+    }
+  }
 }
 
 @media (max-width: 500px) {
@@ -562,6 +685,29 @@
       padding: 0 20px 0 15px;
     }
   }
+
+  .process {
+    &__title {
+      font-size: 28px;
+    }
+  }
+
+  .services-add {
+    &__title {
+      font-size: 28px;
+
+      &::after {
+        left: 124px;
+      }
+    }
+  }
 }
 
-@media (max-width: 420px) {}
+@media (max-width: 420px) {
+  .process {
+    &__item {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
