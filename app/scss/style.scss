@@ -618,7 +618,8 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+    grid-template-rows: auto;
     grid-gap: 15px;
     margin-bottom: 40px;
   }
@@ -790,10 +791,11 @@
   &__content-img {
     max-width: 650px;
     min-height: 240px;
+    width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    object-fit: cover;
   }
 
   &__call {
@@ -1530,7 +1532,7 @@
     .slick-prev {
       position: absolute;
       top: 50%;
-      left: 0;
+      left: -100px;
       width: 20px;
       height: 72px;
       border: none;
@@ -1545,7 +1547,7 @@
       position: absolute;
       bottom: 19px;
       top: 50%;
-      right: 0;
+      right: -100px;
       width: 20px;
       height: 72px;
       background-color: transparent;
@@ -1687,12 +1689,13 @@
   .form__inner {
     padding-bottom: 9px;
   }
-  
 
 }
 
 
 .footer {
+  width: 100%;
+  min-height: auto;
   background-image: linear-gradient(93deg, rgb(38, 38, 38) 0%, rgb(25, 25, 25) 100%);
   position: relative;
   background-color: #242424;
@@ -1704,7 +1707,7 @@
   display: flex;
   justify-content: space-between;
   color: #fff;
-  padding: 130px 10px 139px 0;
+  padding: 130px 10px 139px  10px;
 
   &__title {
     @extend %Roboto-400;
@@ -1715,6 +1718,9 @@
   &__item {
     width: 290px;
     height: 260px;
+    &:last-child {
+      margin-right: 50px;
+    }
   }
 
   &__subtitle {
@@ -1762,13 +1768,12 @@
   }
 
   &__list {
-    width: 290px;
+    max-width: 290px;
     height: 130px;
     margin-bottom: 70px !important;
   }
 
   &__social {
-    position: relative;
     width: 302px;
     height: 144px;
   }
@@ -1797,8 +1802,8 @@
 
 .footer-up__link {
   position: absolute;
-  bottom: 152px;
-  right: 6px;
+  bottom: 89px;
+  right: 9px;
 }
 
 .footer-up__img {
