@@ -39,7 +39,7 @@ $(function () {
     prevArrow: '<button type="button" class="slick-prev"><img src="images/review/arrow-left.svg" alt="arrow-left"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/review/arrow-right.svg" alt="arrow-right"></button>',
     responsive: [{
-      breakpoint: 1350,
+      breakpoint: 1250,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -53,19 +53,8 @@ $(function () {
 });
 
 
-var smy = document.getElementById("s1");
-var assilka = document.getElementById("a1");
-
-smy.onchange = function OnChange() {
-  switch (smy.selectedIndex) {
-    case 0:
-      assilka.href = "Selected-0";
-      break;
-    case 1:
-      assilka.href = "Selected-1";
-      break;
-    case 2:
-      assilka.href = "Selected-2";
-      break;
-  }
+document.querySelector('.select__list').onchange = function() {
+	const a = document.createElement('a')
+  a.href = this.value
+  a.click()
 }

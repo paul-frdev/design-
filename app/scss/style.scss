@@ -160,6 +160,10 @@
   width: 100%;
 }
 
+.select__list {
+  position: relative;
+}
+
 .jq-selectbox__trigger-arrow {
   position: absolute;
   top: 8px;
@@ -173,20 +177,18 @@
   object-fit: cover;
   transition: transform 1s;
 
-  &:hover {
+  &:active {
     transform: rotate(180deg);
   }
 }
 
 .top-banner {
   max-width: 100%;
-  // min-height: calc(100vh - 65px);
   min-height: 100vh;
   box-shadow: 0px 0px 21px 0px rgba(0, 1, 5, 0.19);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  // object-fit: cover;
   padding-bottom: 50px;
 
   &__inner {
@@ -1527,14 +1529,15 @@
   &__inner {
     position: relative;
     padding-top: 83px;
+    max-width: 1530px;
+    width: 100%;
 
-
-    .slick-prev {
+    .slick-prev.slick-arrow {
       position: absolute;
       top: 50%;
       left: -100px;
-      width: 20px;
-      height: 72px;
+      width: auto;
+      height: auto;
       border: none;
       outline: 0;
       background-color: transparent;
@@ -1543,13 +1546,12 @@
       // box-shadow: 0px 0px 4px 0px rgba(0, 1, 5, 0.57);
     }
 
-    .slick-next {
+    .slick-next.slick-arrow {
       position: absolute;
-      bottom: 19px;
       top: 50%;
       right: -100px;
-      width: 20px;
-      height: 72px;
+      width: auto;
+      height: auto;
       background-color: transparent;
       outline: transparent;
       border: none;
@@ -1558,13 +1560,8 @@
       z-index: 999;
       // box-shadow: 0px 0px 4px 0px rgba(0, 1, 5, 0.57);
     }
-  }
 
-  .slick-arrow {
-    border: none;
-    background-color: transparent;
   }
-
 
   &__title {
     position: relative;
@@ -1595,7 +1592,7 @@
     max-width: 420px;
     height: 520px;
     padding-top: 25px;
-    margin: 10px;
+    margin: 21px;
     background-color: #fff;
     box-shadow: 0px 0px 24px 0px rgba(0, 1, 5, 0.1);
   }
@@ -1707,7 +1704,7 @@
   display: flex;
   justify-content: space-between;
   color: #fff;
-  padding: 130px 10px 139px  10px;
+  padding: 130px 10px 139px 10px;
 
   &__title {
     @extend %Roboto-400;
@@ -1718,6 +1715,7 @@
   &__item {
     width: 290px;
     height: 260px;
+
     &:last-child {
       margin-right: 50px;
     }
