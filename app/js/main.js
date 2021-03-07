@@ -1,6 +1,15 @@
 $(function () {
 
-  $('.menu__btn').on('click', function () {
+  $(".menu a, .footer-up__link").on("click", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
+
+  $('.menu__btn, .menu li').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
   });
 
@@ -39,13 +48,30 @@ $(function () {
     prevArrow: '<button type="button" class="slick-prev"><img src="images/review/arrow-left.svg" alt="arrow-left"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/review/arrow-right.svg" alt="arrow-right"></button>',
     responsive: [{
-      breakpoint: 1250,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        arrows: true,
-      }
-    }, ]
+        breakpoint: 1260,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: true,
+        }
+      },
+      {
+        breakpoint: 860,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 4,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ]
   });
 
   var mixer = mixitup('.portfolio__content');
@@ -53,8 +79,8 @@ $(function () {
 });
 
 
-document.querySelector('.select__list').onchange = function() {
-	const a = document.createElement('a')
+document.querySelector('.select__list').onchange = function () {
+  const a = document.createElement('a')
   a.href = this.value
   a.click()
 }
