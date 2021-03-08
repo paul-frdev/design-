@@ -45,18 +45,24 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 2,
     arrows: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="images/review/arrow-left.svg" alt="arrow-left"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/review/arrow-right.svg" alt="arrow-right"></button>',
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
     responsive: [{
-        breakpoint: 1260,
+      breakpoint: 1380,
+      settings: {
+        arrows: false,
+      },
+    }, 
+      {
+        breakpoint: 1280,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          arrows: true,
+          arrows: false,
         }
       },
       {
-        breakpoint: 860,
+        breakpoint: 960,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 4,
@@ -67,7 +73,7 @@ $(function () {
         breakpoint: 500,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 4,
           arrows: false,
         },
       },

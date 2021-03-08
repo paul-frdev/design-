@@ -33,11 +33,13 @@
 
   .review-slider {
     &__items {
-      max-width: 940px;
+      max-width: 903px;
     }
 
     &__item {
-      margin: 28px;
+      margin: 0 auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
 }
@@ -176,6 +178,7 @@
       margin: 0 auto;
     }
   }
+
   .review-slider {
     &__inner {
       padding-top: 0;
@@ -280,6 +283,7 @@
     .container {
       padding: 0;
     }
+
     &__inner {
       max-width: 100%;
       padding-left: 15px;
@@ -442,7 +446,20 @@
     }
 
     &__items {
-      max-width: 677px;
+      max-width: 696px;
+    }
+
+    &__link {
+      left: 12px;
+      right: 12px;
+    }
+
+    &__slider-text {
+      padding-left: 85px;
+
+      &::before {
+        left: 15px;
+      }
     }
   }
 
@@ -502,18 +519,21 @@
     &__items {
       max-width: 490px;
     }
+
     &__item {
       height: auto;
     }
+
     .slick-prev.slick-arrow {
       top: 79px;
       left: 205px;
     }
+
     .slick-next.slick-arrow {
       top: 79px;
       right: 214px;
     }
-    
+
     .slick-dots {
       bottom: 107px;
       right: 43%;
@@ -639,13 +659,20 @@
 
     &__sideleft-img,
     &__sideright-img {
-      margin-bottom: 40px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+    &__sideright-subtitle {
+      padding-bottom: 30px;
     }
 
     &__sideleft-result,
     &__sideright-result {
       margin-left: 0;
       width: 100%;
+    }
+    &__sideright-text--span {
+      padding-top: 30px;
     }
   }
 
@@ -661,7 +688,7 @@
     &__inner {
       .slick-prev.slick-arrow {
         top: 23px;
-        left: 97px;
+        left: 76px;
       }
 
       .slick-next.slick-arrow {
@@ -683,6 +710,10 @@
       max-width: 337px;
       margin: 0 auto;
       padding-top: 90px;
+    }
+    &__link  {
+      left: 0;
+      right: 0;
     }
   }
 
@@ -757,7 +788,7 @@
 
     &__btn {
       font-size: 12px;
-      width: 305px;
+      width: 296px;
 
       &::after {
         top: 11px;
@@ -853,7 +884,7 @@
       font-size: 28px;
 
       &::after {
-        left: 124px;
+        left: 110px;
       }
     }
   }
@@ -880,20 +911,31 @@
       font-size: 10px;
     }
   }
-  .review-slider  {
-    .slick-dots {
 
-    }
+  .review-slider {
+    .slick-dots {}
   }
 }
 
 @media (max-width: 420px) {
   .process {
     &__item {
-      margin-right: 0;
-      margin-left: 0;
+      margin: 0 auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
+
+  .news-slider {
+    &__inner {
+      .slick-next.slick-arrow {
+        left: 158px;
+      }
+    }
+  } 
+    
+
+
 
   .review-slider {
     .slick-dots {
