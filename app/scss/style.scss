@@ -225,6 +225,7 @@
   }
 
   &__title span {
+    display: block;
     @extend %Roboto-500;
     color: #ffa200;
     font-size: 60px;
